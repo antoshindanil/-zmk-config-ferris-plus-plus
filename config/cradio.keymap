@@ -30,6 +30,21 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+        combo_backspace {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp BACKSPACE>;
+        };
+        combo_space {
+            timeout-ms = <50>;
+            key-positions = <10 11 12 13>;
+            bindings = <&kp SPACE>;
+        };
+        combo_enter {
+            timeout-ms = <50>;
+            key-positions = <16 17 18 19>;
+            bindings = <&kp ENTER>;
+        };
     };
 
 /*     conditional_layers { */
@@ -55,7 +70,7 @@
             bindings = <
             &kp TAB    &kp N7     &kp N8     &kp N9     &kp N0         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
             &kp LSHFT  &kp N4     &kp N5     &kp N6     &kp MINUS      &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SQT
-            &kp LCTRL  &kp N1     &kp N2     &kp N3     &kp EQUAL      &LGUI      &trans     &trans     &trans     &trans
+            &kp LCTRL  &kp N1     &kp N2     &kp N3     &kp EQUAL      &LGUI      &kp ESC    &trans     &trans     &trans
                                              &mo 3      &mo 2          &trans     &trans
             >;
         };
