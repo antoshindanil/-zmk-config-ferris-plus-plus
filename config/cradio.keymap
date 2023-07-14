@@ -19,31 +19,36 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
             global-quick-tap;
-            bindings = <&kp>, <&kp>;
+            bindings = <&sk>, <&kp>;
         };
     };
 
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <70>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
         combo_backspace {
-            timeout-ms = <50>;
+            timeout-ms = <70>;
             key-positions = <8 9>;
             bindings = <&kp BACKSPACE>;
         };
         combo_space {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
+            timeout-ms = <70>;
+            key-positions = <23 24>;
             bindings = <&kp SPACE>;
         };
         combo_enter {
-            timeout-ms = <50>;
-            key-positions = <18 19>;
+            timeout-ms = <70>;
+            key-positions = <9 19>;
             bindings = <&kp ENTER>;
+        };
+        combo_gui {
+            timeout-ms = <50>;
+            key-positions = <25 26>;
+            bindings = <&ht LGUI LGUI>;
         };
     };
 
