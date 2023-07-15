@@ -27,17 +27,17 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <70>;
-            key-positions = <0 1>;
+            key-positions = <0 10>;
             bindings = <&kp ESC>;
         };
         combo_backspace {
             timeout-ms = <70>;
-            key-positions = <8 9>;
+            key-positions = <6 16>;
             bindings = <&kp BACKSPACE>;
         };
         combo_space {
             timeout-ms = <70>;
-            key-positions = <23 24>;
+            key-positions = <3 13>;
             bindings = <&kp SPACE>;
         };
         combo_enter {
@@ -68,7 +68,7 @@
             &kp TAB    &kp N7     &kp N8     &kp N9     &kp N0         &kp GRAVE   &trans     &trans     &kp LBKT   &kp RBKT
             &kp LSHFT  &kp N4     &kp N5     &kp N6     &kp MINUS      &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SQT
             &kp LCTRL  &kp N1     &kp N2     &kp N3     &kp EQUAL      &kp LGUI   &kp ESC    &trans     &trans     &kp BSLH
-                                             &kp LGUI   &mo 2          &trans     &trans
+                                             &kp LGUI   &mo 2          &trans      &trans
             >;
         };
 
